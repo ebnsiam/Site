@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+li, a {
+    font-family: 'cairo', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #DBDBDB;
+    text-decoration: none;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #706D54;
+    z-index: 999;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    background-color: transparent;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 1em;
+    font-weight: 800;
+    color: white;
+
+}
+
+.nav_links li a:hover {
+    color: #A08963;
+}
+
+.cart {
+    font-size: 1.7em;
+}
+
+.cart:hover {
+    color: #A08963;
+    transform: scale(1.2);
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 3em;
+    font-family: Aref Ruqaa;
+}
+
+
+body {
+    background-color: beige;
+}
+
+section {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main1{
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(pic/arabic-store.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+}
+
+.main1 h1 {
+    display: fixed;
+    text-align: right;
+    font-size: 3em;
+    font-family: Aref Ruqaa;
+    color: white;
+}
+
+
+.main1 button {
+    transition: all 0.3s ease 0s;
+    padding: 15px 40px;
+    background-color: #A08963;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 30px;
+    border-color: transparent;
+    margin-right:150px ;
+}
+
+.main1 button:hover {
+    background-color: #ac8445;
+    scale: 1.1;
+
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .nav_links li a {
+        font-size: 0.6em;
+    }
+
+    .cart {
+        font-size: 1.2em;
+    }
+
+    .main1 {
+        background-size: cover;
+    }
+
+    .main1 button {
+        font-size: 0.9em;
+        margin-right: 2em;
+        padding: 7px 20px;
+        border-radius: 20px;
+    }
+
+    .main1 h1 {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 1em;
+    }
+}
