@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+li, a {
+    font-family: 'cairo', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #DBDBDB;
+    text-decoration: none;
+
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #706D54;
+    z-index: 999;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    background-color: transparent;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 1em;
+    font-weight: 800;
+    color: white;
+
+}
+
+.nav_links li a:hover {
+    color: #A08963;
+}
+
+.cart:hover {
+    color: #A08963;
+    transform: scale(1.2);
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 3em;
+    font-family: Aref Ruqaa;
+}
+
+
+body {
+    background-color: beige;
+}
+
+section {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main1{
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(pic/arabic-store.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+}
+
+.main1 h1 {
+    display: fixed;
+    text-align: right;
+    font-size: 3em;
+    font-family: Aref Ruqaa;
+    color: white;
+}
+
+.main1 nav {
+    display: flex;
+    flex-direction: row;
+    padding-right: 200px;
+}
+
+.main1 button {
+    transition: all 0.3s ease 0s;
+    padding: 15px 40px;
+    background-color: #A08963;
+    font-size: 1em;
+    border-radius: 30px;
+    border-color: transparent;
+}
+
+.main1 button:hover {
+    background-color: #ac8445;
+    scale: 1.1;
+
+}
