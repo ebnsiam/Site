@@ -18,11 +18,13 @@ li, a {
 
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 10px 10%;
     background-color: #706D54;
     z-index: 999;
 }
@@ -49,6 +51,10 @@ header {
 
 .nav_links li a:hover {
     color: #A08963;
+}
+
+.cart {
+    font-size: 1.7em;
 }
 
 .cart:hover {
@@ -92,23 +98,54 @@ section {
     color: white;
 }
 
-.main1 nav {
-    display: flex;
-    flex-direction: row;
-    padding-right: 200px;
-}
 
 .main1 button {
     transition: all 0.3s ease 0s;
     padding: 15px 40px;
     background-color: #A08963;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 500;
     border-radius: 30px;
     border-color: transparent;
+    margin-right:150px ;
 }
 
 .main1 button:hover {
     background-color: #ac8445;
     scale: 1.1;
 
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .nav_links li a {
+        font-size: 0.6em;
+    }
+
+    .cart {
+        font-size: 1.2em;
+    }
+
+    .main1 {
+        background-size: cover;
+    }
+
+    .main1 button {
+        font-size: 0.9em;
+        margin-right: 2em;
+        padding: 7px 20px;
+        border-radius: 20px;
+    }
+
+    .main1 h1 {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 1em;
+    }
 }
